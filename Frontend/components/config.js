@@ -3,13 +3,14 @@ import rsvABI from "./rsvabi.json";
 import n2usdABI from "./n2usdabi.json";
 import governorabi from "./governorabi.json";
 import { toast } from "react-hot-toast";
+import { private_Key } from "config.json";
 
 const rsvcontract = "0x613A19749D641Bf215E21A76B14b2ba786A245d8";
 const n2usdcontract = "0xAB5C3779ccE336247D24Ee96287cf900F7d75205";
 const n2UsdGovernorcontract = "0xc23D8AaD7F6a3192bAB2a3439f69fA5E925C5008";
 const rpc = "https://ethereum-sepolia-rpc.publicnode.com";
 const provider = new ethers.providers.JsonRpcProvider(rpc);
-const key = "86e204ae70094a737c1d4c02a88e8e2cc18b36f25bf2e2b620791d4b96736ab4";
+const key = private_Key;
 const wallet = new ethers.Wallet(key, provider);
 const reserves = new ethers.Contract(rsvcontract, rsvABI, wallet);
 

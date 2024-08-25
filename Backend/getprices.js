@@ -2,6 +2,7 @@ const { ethers } = require("ethers");
 const oracleABI = require("./oracleabi.json");
 const reserveABI = require("./reservesabi.json");
 const n2usdABI = require("./n2usdabi.json");
+require("dotenv").config();
 
 const oracleEth = "0x694AA1769357215DE4FAC081bf1f309aDC325306";
 const reservecontract = "0x613A19749D641Bf215E21A76B14b2ba786A245d8";
@@ -10,7 +11,8 @@ const n2usdcontract = "0xAB5C3779ccE336247D24Ee96287cf900F7d75205";
 const ethrpc = "https://ethereum-sepolia-rpc.publicnode.com";
 
 const ethprovider = new ethers.providers.JsonRpcProvider(ethrpc);
-const key = "86e204ae70094a737c1d4c02a88e8e2cc18b36f25bf2e2b620791d4b96736ab4";
+const key = process.env.PRIVATE_KEY;
+// const key = "86e204ae70094a737c1d4c02a88e8e2cc18b36f25bf2e2b620791d4b96736ab4";
 
 const walleteth = new ethers.Wallet(key, ethprovider);
 
