@@ -12,7 +12,7 @@ import {
   Filler,
 } from "chart.js";
 
-const backend = "http://localhost:8082";
+const backend = "https://full-stack-stablecoin-chart-dapp.onrender.com/";
 
 ChartJS.register(
   CategoryScale,
