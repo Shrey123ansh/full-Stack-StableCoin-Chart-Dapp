@@ -3,6 +3,7 @@
 🤑The Official ERC20 Algoritmic Stablecoin Project Tutorial Repo - Complete repo on how to deploy your own algorithmic stablecoin and back it with a hybrid collateral reserve between other stablecoins or cryptocurrencies.
 
 Frontend Live-https://full-stack-stable-coin-chart-dapp-rcz3.vercel.app/
+
 Backend Live-https://full-stack-stablecoin-chart-dapp.onrender.com/
 
 Method-2
